@@ -1,0 +1,21 @@
+{
+  "name": "graphql_movie_api",
+  "version": "1.0.0",
+  "description": "movie api with graphql",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon babel-node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.15"
+  }
+}
