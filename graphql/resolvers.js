@@ -1,6 +1,13 @@
+import {people, getById, addPerson, leavePerson} from './db.js';
+
 const resolvers = {
     Query: {
-      name: () => "ahyeon"
+      people: () => people,
+      person: (_, { id }) => getById(id)
+    },
+    Mutation: {
+      addPerson: (_, { name, gender, age }) => addPerson(name, gender, age),
+      leavePerson: (_, { id }) => leavePerson(id)
     }
   };
   
